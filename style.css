@@ -1,0 +1,550 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Sintony", sans-serif;
+}
+
+p {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+}
+
+.Cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 2%;
+}
+
+.Your a {
+    font-family: "Pathway Extreme", sans-serif;
+    color: rgba(255, 137, 137, 1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.Cima a span {
+    color: rgba(15, 10, 150, 1);
+}
+
+.outros {
+    display: flex;
+    gap: 30px;
+}
+
+.outros a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.Sec01 {
+    border-bottom: 1px solid rgba(212, 212, 212, 1);
+    background: linear-gradient(
+        115deg,
+         #ffffff 50%,
+         rgba(212, 198, 231, 1) 80%
+    );
+}
+
+.lado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.esquerda{
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.esquerda:first-child{
+    position: relative;
+}
+
+.brilho {
+    position: absolute;
+    top: -20px;
+    right: 22%;
+}
+
+.brilho img{
+    rotate: 110deg;
+}
+
+.Filosofo {
+    color: rgba(15, 10, 150, 1);
+    font-size: 4rem;
+    line-height: 110%;
+}
+
+.Filosofo:last-of-type{
+    margin-bottom: 30px;
+}
+
+.Filosofo span {
+    color: rgba(255, 137, 137, 1);
+}
+
+.desc{
+    margin-bottom: 20px;
+}
+
+.direita{
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+
+.Model {
+    background-image: url(Image/Model.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 2/3;
+    height: 570px;
+    top: -50px;
+    left: -30%;
+    position: absolute;
+}
+
+.butos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: rgba(93, 75, 255, 1);
+    border: 1px solid rgba(43, 38, 179, 1);
+    border-radius: 8px;
+    height: 45px;
+    width: 155px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    scale: 1.2;
+}
+
+.btn p {
+    font-weight: 600;
+}
+
+#Saiba {
+    background-color: rgb(255, 255, 255);
+}
+
+#Saiba p {
+    color: rgba(255, 137, 137, 1);
+    text-shadow:
+        0 0 2px rgba(43, 38, 179, 1);
+}
+
+.btn p {
+    font-family: "Oxygen", sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-shadow:
+        0 0 2px #ffffffbd;
+}
+
+.Inspirado{
+    font-family: "Pathway Extreme", sans-serif;
+    font-weight: 700;
+
+}
+
+.Inspirado span{
+    color: rgba(43, 38, 179, 1);
+}
+
+.Sec02 .Cima h1, a{
+    color: rgba(43, 38, 179, 1);
+}
+
+.Sec02{
+    padding-bottom: 40px;
+}
+
+.Cima h1{
+    font-size: 2rem;
+}
+
+.Sec02 .Cima a{
+    font-family: "Pathway Extreme", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Sec02 .Cima h1{
+    position: relative;
+    margin-top: 15px;
+}
+
+.seta img{
+    vertical-align: middle;
+}
+
+.brilho2{
+    position: absolute;
+    top: -15px;
+}
+
+.produtos {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    justify-content: space-between;
+}
+
+.card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+
+.card img {
+    width: 270px;
+    height: 40vh;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.18);
+}
+
+.card h3{
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card p{
+    margin-top: 8px;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg,#ff0000,#000000,#b40000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card span{
+    margin-right: 8px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.Sec03{
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.Sec03 h1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow:
+        0 0 2px #ffffffbd;
+}
+
+.Sec03 a{
+    color: rgba(210, 210, 210, 1);
+    font-family: "Pathway Extreme", sans-serif;
+    font-weight: 500;
+}
+
+.Musga {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.umadecada iframe {
+    width: 400px;
+    height: 280px;
+    z-index: 1;
+}
+
+.umadecada{
+    position: relative;
+}
+
+.brilhinho{
+    position: absolute;
+    top: -70px;
+    left: -110px;
+    pointer-events: none;
+}
+
+.Sec04{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* mais altura = mais distância de scroll pra rotação dos Rosa* ficar suave */
+    padding: 10vh 0;
+}
+
+.Sec04 div h1{
+    font-family: "Sintony", sans-serif;
+    font-size: 4rem;
+    position: relative;
+    color: rgba(15, 10, 150, 1);
+}
+
+.Sec04 div{
+    position: relative;
+}
+
+.Rosa, .Rosa2, .Rosa3{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 13%;
+    left: 90%;
+    /* translate como propriedade independente do transform:
+       o GSAP controla o rotate() via transform sem apagar isso */
+    translate: -50% -50%;
+    display: inline-block;
+}
+
+.Rosa img, .Rosa2 img, .Rosa3 img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.Sec04 div p{
+    padding: 20px 0px;
+}
+
+.Sec04 div a{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-weight: 600;
+    font-family: "Pathway Extreme", sans-serif;
+}
+
+.Sec05{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sec05 h1{
+    font-size: 4rem;
+    font-family: "Sintony", sans-serif;
+    color: rgba(15, 10, 150, 1);
+}
+
+.Nasededecepôpula{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 7%;
+    justify-content: space-around;
+}
+
+.Redondo{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    background-color: rgba(157, 146, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Redondo img{
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.tipos{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 87.5px;
+    flex-shrink: 0;
+}
+
+.tipos h1{
+    color: rgba(255, 137, 137, 1);
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.Sec06{
+    background-color: rgba(157, 146, 255, 1);
+    padding: 50px 0px;
+}
+
+.Sec06 h1{
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: rgba(15, 10, 150, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.Sec06 p{
+    display: flex;
+    justify-content: center;
+}
+
+.forms{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+.forms input{
+    padding: 15px 0px;
+    width: 15%;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.forms input::placeholder{
+    font-size: 14px;
+    padding: 0px 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: rgba(94, 94, 94, 1);
+}
+
+.forms button{
+    padding: 10px 5px;
+    background-color: rgba(15, 10, 150, 1);
+    border: 0px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.forms button:hover{
+    scale: 1.1;
+    background-color: #ffffff;
+    border: 1px solid rgba(15, 10, 150, 1);
+}
+
+.forms button p{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.forms button:hover p{
+    color: rgba(255, 137, 137, 1);
+}
+
+footer{
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.emcima{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: start;
+    padding: 2% 5%;
+}
+
+footer h1{
+    color:  rgba(157, 146, 255, 1);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Yours{
+    font-size: 2rem;
+    font-family: "Pathway Extreme", sans-serif;
+    font-weight: 600;
+}
+
+.Yours{
+    color: rgba(255, 137, 137, 1);
+}
+
+.Yours span{
+    color:  rgba(157, 146, 255, 1);
+}
+
+footer p{
+    font-family: "Oxygen", sans-serif;
+    color: rgba(222, 222, 222, 0.932);
+    font-weight: 600;
+    text-shadow: 
+        0 0 1.5px rgba(255, 255, 255, 0.5),
+        0 0 3px rgba(255, 255, 255, 0.25);
+    padding-bottom: 10px;
+}
+
+footer a {
+    display: block;
+    font-family: "Oxygen", sans-serif;
+    color: rgba(222, 222, 222, 0.932);
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 
+        0 0 1.5px rgba(255, 255, 255, 0.5),
+        0 0 3px rgba(255, 255, 255, 0.25);
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: rgba(255, 137, 137, 1);
+}
+
+.separacao h1{
+    line-height: 32px;
+}
+
+.separacao:first-of-type{
+    margin-right: 5%;
+}
+
+.separacao:last-of-type a{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.direitos{
+    display: flex;
+    justify-content: center;
+}
+
+.direitos p{
+    color: rgba(98, 98, 98, 1);
+    text-shadow: 
+        0 0 2px rgba(255, 255, 255, 0.25);
+}
