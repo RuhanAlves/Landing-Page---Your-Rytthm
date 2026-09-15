@@ -4,6 +4,50 @@
     padding: 0;
 }
 
+:root {
+    /* MODO CLARO */
+    --fundo: #FFFFFF;
+    --fundo-secundario: #F7F7F7;
+    --fundo-lavanda: #DCD7FF;
+    --texto: #222222;
+    --texto-secundario: #5E5E5E;
+    --azul: #2323A6;
+    --azul-botao: #5D4BFF;
+    --azul-borda: #2B26B3;
+    --rosa: #FFA5AE;
+    --roxo: #9D92FF;
+    --borda: #D4D4D4;
+    --borda-card: #222222;
+    --sombra-card: rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="dark"] {
+    /* MODO ESCURO */
+    --fundo: #111111;
+    --fundo-secundario: #181818;
+    --fundo-lavanda: #24234A;
+    --texto: #F5F5F5;
+    --texto-secundario: #BDBDBD;
+    --azul: #8585FF;
+    --azul-botao: #6D60FF;
+    --azul-borda: #7770E8;
+    --rosa: #FFA5AE;
+    --roxo: #8B80E8;
+    --borda: #333333;
+    --borda-card: #4A4A4A;
+    --sombra-card: rgba(0, 0, 0, 0.45);
+}
+
+/* TRANSIÇÃO SUAVE ENTRE OS TEMAS */
+html, body, section, footer, h1, h3, p, a, input, button, .btn, .card, .card img, .Redondo, .slider, .slider:before {
+    transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
 h1 {
     font-family: "Sintony", sans-serif;
 }
@@ -22,14 +66,14 @@ p {
 
 .Your a {
     font-family: "Pathway Extreme", sans-serif;
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
     text-decoration: none;
     font-weight: 600;
     font-size: 2rem;
 }
 
 .Cima a span {
-    color: rgba(15, 10, 150, 1);
+    color: var(--azul);
 }
 
 .outros {
@@ -39,17 +83,17 @@ p {
 
 .outros a {
     text-decoration: none;
-    color: black;
+    color: var(--texto);
     font-family: "Inter", sans-serif;
     font-weight: 700;
 }
 
 .Sec01 {
-    border-bottom: 1px solid rgba(212, 212, 212, 1);
+    border-bottom: 1px solid var(--borda);
     background: linear-gradient(
         115deg,
-         #ffffff 50%,
-         rgba(212, 198, 231, 1) 80%
+        var(--fundo) 50%,
+        var(--fundo-lavanda) 80%
     );
 }
 
@@ -78,7 +122,7 @@ p {
 }
 
 .Filosofo {
-    color: rgba(15, 10, 150, 1);
+    color: var(--azul);
     font-size: 4rem;
     line-height: 110%;
 }
@@ -88,7 +132,7 @@ p {
 }
 
 .Filosofo span {
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
 }
 
 .desc{
@@ -120,8 +164,8 @@ p {
 }
 
 .btn {
-    background-color: rgba(93, 75, 255, 1);
-    border: 1px solid rgba(43, 38, 179, 1);
+    background-color: var(--azul-botao);
+    border: 1px solid var(--azul-borda);
     border-radius: 8px;
     height: 45px;
     width: 155px;
@@ -141,11 +185,11 @@ p {
 }
 
 #Saiba {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--fundo);
 }
 
 #Saiba p {
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
     text-shadow:
         0 0 2px rgba(43, 38, 179, 1);
 }
@@ -165,11 +209,11 @@ p {
 }
 
 .Inspirado span{
-    color: rgba(43, 38, 179, 1);
+    color: var(--azul);
 }
 
 .Sec02 .Cima h1, a{
-    color: rgba(43, 38, 179, 1);
+    color: var(--azul);
 }
 
 .Sec02{
@@ -221,9 +265,9 @@ p {
     width: 270px;
     height: 40vh;
     object-fit: cover;
-    border: 2px solid black;
+    border: 2px solid var(--borda-card);
     border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.18);
+    box-shadow: 0 3px 12px var(--sombra-card);
 }
 
 .card h3{
@@ -266,7 +310,7 @@ p {
 }
 
 .Sec03 a{
-    color: rgba(210, 210, 210, 1);
+    color: var(--texto-secundario);
     font-family: "Pathway Extreme", sans-serif;
     font-weight: 500;
 }
@@ -309,7 +353,7 @@ p {
     font-family: "Sintony", sans-serif;
     font-size: 4rem;
     position: relative;
-    color: rgba(15, 10, 150, 1);
+    color: var(--azul);
 }
 
 .Sec04 div{
@@ -356,7 +400,7 @@ p {
 .Sec05 h1{
     font-size: 4rem;
     font-family: "Sintony", sans-serif;
-    color: rgba(15, 10, 150, 1);
+    color: var(--azul);
 }
 
 .Nasededecepôpula{
@@ -372,7 +416,7 @@ p {
     height: 180px;
     margin-bottom: 25px;
     border-radius: 50%;
-    background-color: rgba(157, 146, 255, 1);
+    background-color: var(--roxo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,20 +439,20 @@ p {
 }
 
 .tipos h1{
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
     font-size: 3em;
     margin-bottom: 25px;
 }
 
 .Sec06{
-    background-color: rgba(157, 146, 255, 1);
+    background-color: var(--roxo);
     padding: 50px 0px;
 }
 
 .Sec06 h1{
     font-size: 4rem;
     margin-bottom: 40px;
-    color: rgba(15, 10, 150, 1);
+    color: var(--borda-card);
     display: flex;
     justify-content: center;
 }
@@ -431,6 +475,8 @@ p {
     width: 15%;
     border: 0px;
     border-radius: 5px;
+    background-color: var(--fundo-secundario);
+    color: var(--texto);
 }
 
 .forms input::placeholder{
@@ -438,12 +484,12 @@ p {
     padding: 0px 10px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    color: rgba(94, 94, 94, 1);
+    color: var(--texto-secundario);
 }
 
 .forms button{
     padding: 10px 5px;
-    background-color: rgba(15, 10, 150, 1);
+    background-color: var(--azul);
     border: 0px;
     border-radius: 5px;
     transition: all 0.5s ease;
@@ -451,7 +497,7 @@ p {
 
 .forms button:hover{
     scale: 1.1;
-    background-color: #ffffff;
+    background-color: var(--fundo);
     border: 1px solid rgba(15, 10, 150, 1);
 }
 
@@ -463,7 +509,7 @@ p {
 }
 
 .forms button:hover p{
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
 }
 
 footer{
@@ -491,7 +537,7 @@ footer h1{
 }
 
 .Yours{
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
 }
 
 .Yours span{
@@ -500,7 +546,7 @@ footer h1{
 
 footer p{
     font-family: "Oxygen", sans-serif;
-    color: rgba(222, 222, 222, 0.932);
+    color: var(--texto-secundario);
     font-weight: 600;
     text-shadow: 
         0 0 1.5px rgba(255, 255, 255, 0.5),
@@ -511,7 +557,7 @@ footer p{
 footer a {
     display: block;
     font-family: "Oxygen", sans-serif;
-    color: rgba(222, 222, 222, 0.932);
+    color: var(--texto-secundario);
     font-weight: 600;
     text-decoration: none;
     text-shadow: 
@@ -522,7 +568,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgba(255, 137, 137, 1);
+    color: var(--rosa);
 }
 
 .separacao h1{
@@ -548,3 +594,72 @@ footer a:hover {
     text-shadow: 
         0 0 2px rgba(255, 255, 255, 0.25);
 }
+
+/* The switch - the box around the slider */
+.botao-tema {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .botao-tema input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--rosa);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    background-image: url("Image/sun.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+  input:checked + .slider {
+    background-color: #070707;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(46px);
+    -ms-transform: translateX(46px);
+    transform: translateX(46px);
+    background-image: url("Image/moon.png");
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
