@@ -45,3 +45,15 @@ window.addEventListener('load', () => {
     });
 });
 });
+
+const botaoTema = document.querySelector('.botao-tema input');
+
+botaoTema.addEventListener('change', () => {
+
+    if (botaoTema.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+
+});
